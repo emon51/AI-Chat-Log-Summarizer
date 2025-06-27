@@ -49,7 +49,7 @@ class AI_CLS:
             heapq.heappush(self.non_stop_words_max_heap, [-freq, word])
         
     
-    def get_common_used_words(self):
+    def get_most_used_words(self):
         self._get_map_and_heap()
         five_most_used_words = []
         count = 5
@@ -74,5 +74,5 @@ if __name__ == '__main__':
     aichat = AI_CLS(chat_file)
     aichat.chat_log_parsing()
     #aichat.count_messages()
-    print(aichat.get_common_used_words())
+    print(aichat.get_most_used_words())
   
