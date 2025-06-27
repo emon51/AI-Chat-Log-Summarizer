@@ -61,7 +61,7 @@ class AI_CLS:
             five_most_used_words.append(word)
             count -= 1
         
-        #push back all popped elements again
+        #push back all popped elements again into heap.
         while temp_arr:
             freq, word = temp_arr.pop()
             heapq.heappush(self.non_stop_words_max_heap, [freq, word])
@@ -94,5 +94,6 @@ if __name__ == '__main__':
     aichat = AI_CLS(chat_file)
     aichat.chat_log_parsing()
     #aichat.count_messages()
-    print(aichat.get_common_used_words())
+    aichat.get_most_used_words()
+    aichat.get_summary()
   
