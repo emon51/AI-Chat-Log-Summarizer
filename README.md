@@ -26,3 +26,22 @@ This project reads a `.txt` file containing a conversation between a User and an
 ```
 python chat_summarizer.py
 ```
+
+## Examples
+Input: chat.txt 
+```
+User: Hi, can you tell me about Python?
+AI: Sure! Python is a popular programming language known for its readability.
+User: What can I use it for?
+AI: You can use Python for web development, data analysis, AI and more.
+```
+
+Output: 
+```
+Summary:
+- The conversation had 4 exchanges; User: 2 and AI: 2.
+- The user mainly asked about Python.
+- The most common keywords: python, use, data, ai, language.
+```
+
+
